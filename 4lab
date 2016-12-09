@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+ 
+int main()
+{ 
+    int P = 10;
+ 
+	int Arr[P] = {};
+			
+	srand(time(NULL));
+	
+	for(int i = 0; i < P; )
+	{
+		Arr[i] = 1 + rand() % 7; 
+		if(Arr[i] % 2 != 0)    
+		{
+			cout << Arr[i] << " |_| "; 
+			i++;
+		}
+	}
+	cout << endl;
+ 
+return 0;
+}
