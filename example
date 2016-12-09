@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+ 
+int main()
+{
+ 
+	int number = 0;	 
+	char exit = 'y';
+    for (;;)
+	{
+		cout << "Enter the number : ";
+		cin >> number;
+		cout << "The square of the number " << number << " = " << number * number;
+		cout << "\nContinue? - Y, Leave - N: ";
+		cin >> exit; 
+		if (exit != 'y' && exit != 'Y')
+			break; 
+	}		
+	return 0;
+}
