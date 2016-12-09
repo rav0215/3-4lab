@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip> 
+using namespace std;
+ 
+int main()
+{
+  int RowCount = 9;
+  int ColumnCount = 9;
+ 
+	int Matrix[RowCount][ColumnCount] = {};
+ 
+	for (int rowNum = 1; rowNum <= RowCount; rowNum++)
+	{
+		for (int columnNum = 1; columnNum <= ColumnCount; columnNum++)
+		{
+			Matrix[rowNum - 1][columnNum - 1] = rowNum * columnNum;
+			cout << setw(4) << Matrix[rowNum - 1][columnNum - 1];
+		}
+		cout << endl;
+	}	
+	return 0;
+}
+
